@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href="../CSS/register.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="../JS/register.js"></script>
+        <script>
+           </script>
+        </head>
+        <body>
+          <!--HEADER-->
+          <header>
+              
+            <div class="container">
+              <img class="logo_site col-lg-2 col-md-2 col-sm-3 col-xs-2" src="../../static/images/logo.png">
+                  <div class="links col-lg-8 col-md-8 col-sm-5 col-xs-5">
+                    <a href="../HTML/home.html">Home</a>
+                    <a href="../HTML/plp.html">Products</a>
+                   </div>
+                  <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5">
+                    <a href="../HTML/login.html">SignIn</a>
+                    <a href="../HTML/register.html">Register</a>
+                   <a id="addCart">
+                     <div class="cart col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                      <span class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>0 items</span> 
+                  </div></a> 
+                </div>
+             </div>
+          </header>
+            <hr class="hr1">
+            </body>
+        <div class="container">
+                <div class="form">
+                   
+                    <form action="../HTML/home.html" method="get">
+                       <div> <h3>Signup</h3>
+                        <p>We do not share your personal details with anyone</p></div>
+                        <div class="form-input"> 
+                        <label for="firstName">
+                          <p class="label-txt">First Name</p>
+                          <input type="text" class="input" id="firstName" required>
+                          <div class="line-box">
+                            <div class="line"></div>
+                          </div>
+                        </label>
+                        <label for="lastName">
+                          <p class="label-txt">Last Name</p>
+                          <input type="text" class="input" id="lastName" required>
+                          <div class="line-box">
+                            <div class="line"></div>
+                          </div>
+                        </label>
+                        <label for="email">
+                          <p class="label-txt">Email</p>
+                          <input type="email" class="input" id="email" required>
+                          <div class="line-box">
+                            <div class="line"></div>
+                          </div>
+                        
+                        </label>
+                       
+                        <label for="password">
+                            <p class="label-txt">Password</p>
+                            <input type="password" class="input" id="password" title="Password must contain: Minimum 6 characters ,atleast 1 Alphabet and 1 Number and without space" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$">
+                            <div class="line-box">
+                              <div class="line"></div>
+                            </div>
+                          </label>
+                          <label>
+                            <label for="confirmPassword">
+                                <p class="label-txt">Confirm Password</p>
+                                <input type="password" class="input" id="confirmPassword" required>
+                                <div class="line-box">
+                                  <div class="line"></div>
+                                </div>
+                              </label>
+                              <label>
+                        <button type="submit">Signup</button>
+                        </label>
+                    </div>
+                      </form>
+                </div>
+            </div>
+             <!--FOOTER-->
+          <div class="footer-copyright py-3">Copyright © 2011-2018 Sabka Bazaar Grocery Supplies Pvt Ltd
+        </div>   
+            </html>

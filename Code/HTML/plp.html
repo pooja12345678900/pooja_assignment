@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href="../CSS/plp.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://fonts.googleapis.com/css?family=Dosis:400,600,700"></script>
+    <script src="../JS/plp.js"></script>
+    </head>
+    <body>
+      <!--HEADER-->
+    <!--Header Start-->
+    <header>
+              
+      <div class="container">
+        <img class="logo_site col-lg-2 col-md-2 col-sm-3 col-xs-2" src="../../static/images/logo.png">
+            <div class="links col-lg-8 col-md-8 col-sm-5 col-xs-5">
+              <a href="../HTML/home.html">Home</a>
+              <a href="../HTML/plp.html">Products</a>
+             </div>
+             <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5">
+              <a href="../HTML/login.html">SignIn</a>
+              <a href="../HTML/register.html">Register</a>
+               <a id="addCart" data-toggle="modal" data-target="#cartModal">
+                 <div class="cart col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                  <span class='col-lg-12 col-md-12 col-sm-12 col-xs-12'></span> 
+              </div></a> 
+            </div>
+            
+
+       </div>
+    </header>
+        <hr class="hr1">
+        <body> <!--Cart Overlay Start-->
+          <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                   
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                
+                  <div class="d-flex justify-content-end">
+                 
+                    <div class="row container_bg">
+                      <div class="content">
+                        <div class="product"></div>
+                        <div class=" add col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <img class="col-lg-3 col-md-3 col-sm-3 col-xs-3" src="../../static/images/lowest-price.png">
+                          <span class="col-lg-9 col-md-9 col-sm-9 col-xs-9">You won't find it cheaper anywhere</span></div>
+                          <div>   
+                            </div>
+                        </div>
+
+                  </div>
+                </div>
+              
+                </div>
+                <div class="content-aside">
+                  <p>Promo code can be applied on payment page</p> 
+                  <div class="cart-empty">
+                    <div><b>No items in your cart</b><p>Your favourite items are just a click away</p></div>
+                  </div>
+                  <button data-dismiss="modal" class="proceed btn btn_color col-12 col-md-12 col-sm-12 col-xs-12">Proceed to Checkout
+                    <span class="span-right"></span>
+                  </button>
+                  <button data-dismiss="modal" class="shop btn btn_color col-12 col-md-12 col-sm-12 col-xs-12">Start Shopping
+                    
+                  </button>
+                 </div>
+                  
+              </div>
+              
+            </div>
+          </div>
+          <!--Cart Overlay End-->
+            <div class="container">
+                <div class="row_side">
+              
+                  <div class="dropdown col-xs-12">
+                    <button class="btn btn_color btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Categories
+                    </button>
+                     <div class="btn btn_color dropdown-menu col-xs-12" aria-labelledby="dropdownMenuButton">
+                       <div class="drop"></div>
+                    </div>
+                  </div>
+                          <div class="col-lg-3 col-md-3 col-sm-3" id="leftCol">
+                             
+                              <ul class="nav nav-stacked" id="sidebar">
+                              
+                              </ul>
+                          
+                          </div>  
+
+                          <div class="col-lg-9 col-md-9 col-sm-9" id="mainCol">
+                           
+                          </div>
+                          
+                          </div>
+                       
+                          </div>
+
+         <!--FOOTER-->
+   <div class="footer-copyright py-3">Copyright © 2011-2018 Sabka Bazaar Grocery Supplies Pvt Ltd</div>
+        
+        </body>
+        </html>

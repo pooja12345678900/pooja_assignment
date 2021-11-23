@@ -1,0 +1,24 @@
+@import '../styles.scss';
+@use '../styles.scss';
+.carousel-indicators 
+{
+.active{
+  background:black !important;
+  border-radius: 20px !important;
+  padding: 4px !important;
+  opacity: 1 !important;
+}
+  li
+  {
+    background:black !important;
+    border-radius: 20px !important;
+    padding: 4px !important;
+    opacity: 0.3 !important;  
+}
+}
+
+.category
+{
+  @include flexCol;
+  justify-content: space-between;
+}

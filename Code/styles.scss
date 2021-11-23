@@ -1,0 +1,298 @@
+/* Define standard variables and values for website */
+
+
+$whitecolor: white;
+$fontsize: 18px;
+$heightheader : 100px;
+$paddingleft : 100px;
+$paddingright : 100px;
+$slideCount : 5;
+$alignCenter : center;
+$displayFlex : flex;
+$flexDirRow : row;
+$flexDirCol : column;
+$border : 0;
+$displayNone : none;
+$lightgray:lightgray;
+$flexWrap:wrap;
+$height : 100%;
+$width : 100%;
+$posAbs : absolute;
+$right0 : 0;
+@mixin flexRow {
+  display:$displayFlex;
+  flex-direction: $flexDirRow;
+}
+@mixin flexCol
+{
+display:$displayFlex;
+flex-direction: $flexDirCol;
+}
+
+body{
+  font-family : Dosis !important;
+  font-style: normal;
+  font-weight: 400;
+  background-color:black;
+  color: $whitecolor;
+  font-size: $fontsize;
+}
+ 
+  .links
+  {
+    @include flexRow;
+    gap:40px;
+    align-self: flex-end;
+  }
+  .cart
+  {
+    background-image : url('../../static/images/cart.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-top : 40px;
+  }
+  
+    .hr1 {
+      height: 6px;
+      border: $border;
+      box-shadow: inset 0 12px 12px -12px $lightgray;
+    }
+    .hr2 {
+      border: $border;
+      height: 3px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0),lightgray, rgba(0, 0, 0, 0));
+    }
+    .dropdown
+    {
+      display:$displayNone;
+    }
+
+
+.control {
+  display:$displayNone;
+}
+
+#leftCol
+{
+  background-color: $lightgray;
+}
+#mainCol
+{
+  @include flexRow;
+  flex-wrap:$flexWrap;
+}
+.prod
+{
+ @include flexCol;
+  justify-content:space-between;
+ 
+}
+.border_l
+{
+  border-bottom-style: dotted;
+}
+.row_side
+{
+  @include flexRow;
+  height:$height;
+  width:$width;
+}
+.nav-stacked
+{
+@include flexCol;
+}
+.description
+{
+  background-color:$lightgray;
+  padding:inherit;
+  overflow: hidden;
+  height:$heightheader;
+}
+.price
+{
+display: $displayFlex;
+justify-content: space-between;
+align-items: $alignCenter;
+}
+
+#mainCol h2 {
+	padding-top: 55px;
+    margin-top: -55px;
+}
+.descrip
+{
+  padding-top:50px;
+  text-align:$alignCenter;
+}
+
+.footer-copyright 
+{
+  background-color:$lightgray;
+}
+.aside{
+@include flexRow;
+align-items:$alignCenter;
+}
+.btn_color
+{
+  background-color: rgba(207, 22, 68, 0.781);
+  color : $whitecolor;
+}
+  @media screen and (max-width:767px){
+    .logo_site
+    {
+      background-repeat : round;
+    }
+    .dropdown
+    {
+    display:block;
+    }
+   .row_side
+   {
+     flex-direction: $flexDirCol;
+   }
+   #leftCol
+   {
+     display:$displayNone;
+   }
+   .dropdown-toggle
+   {
+     width:$width;
+   }
+  }
+
+//POPOVER
+.cart-empty
+{
+  display:$displayNone;
+  padding:20em 0;
+  text-align:$alignCenter;
+}
+.span-right
+{
+  right:$right0;
+  position:$posAbs;
+}
+.modal{
+  position:$posAbs;
+  width:$width;
+  height:$height;
+  right:$right0;
+    }
+
+.content-aside
+{
+  right:$right0;
+  width: $width;
+  text-align: $alignCenter;
+  background-color: $whitecolor;
+  position:$posAbs;
+  
+}
+.product
+{
+  @include flexCol;
+  background-color:$whitecolor;
+  gap:40px;
+}
+.content
+{
+  background-color:$whitecolor;
+  @include flexCol;
+  height:inherit;
+  overflow:scroll
+}
+.container_bg
+{
+  background-color:$lightgray;
+  height:$height;
+  width:$width;
+  position:$posAbs;
+}
+.modal-body
+{
+  height:$height;
+  //overflow:inherit;
+}
+.modal-header
+{
+  background-color:black !important;
+  color:$whitecolor;
+}
+.modal-content
+{
+    height:$height;
+    border:0px !important;
+   overflow:initial;
+    
+}
+@media screen and (min-width:768px) {
+  .modal-lg
+  {
+      width: 40% !important;
+      height:$height !important;
+      right:$right0 !important;
+      position:$posAbs !important;
+  }
+}
+@media screen and (max-width:768px) {
+  .modal-lg
+  {
+      height:$height !important;
+      right:$right0 !important;
+  }
+}
+
+.container-head
+{
+  @include flexRow;
+  justify-content: space-evenly;
+  img {
+    height:$height;
+  }
+}
+.login-link
+{
+  @include flexRow;
+  flex-wrap:$flexWrap;
+  align-self:$alignCenter;
+  justify-content:space-evenly;
+}
+button.close
+{
+  color:$whitecolor;
+  opacity:1;
+}
+.add
+{
+  height:$heightheader;
+  background-color:$whitecolor;
+  margin-top:50px;
+}
+
+.items
+{
+  @include flexRow;
+  height:$heightheader;
+  gap:0px;
+}
+.desc
+{
+  @include flexCol;
+  padding-left:0px;
+  padding-right:0px;
+}
+.bot
+{
+@include flexRow;
+align-items:$alignCenter;
+gap:4px;
+}
+.total
+{
+  right:$right0;
+  margin:auto;
+  padding:5px 0;
+  position:$posAbs;
+}
