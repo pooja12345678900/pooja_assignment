@@ -1,17 +1,19 @@
-@import '../styles.scss';
-.drop
-{
-    position:relative !important;
-    background-color: rgba(207, 22, 68, 0.781) !important;
-    display:flex !important;
-    flex-direction: column !important;
-    align-items:center;
-    li {
-        padding:5px;
-    }
-    li a {
-        color:white;
-    }
-    
+@import "../styles.scss";
+.drop {
+  position: relative !important;
+  background-color: rgba(207, 22, 68, 0.781) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  li {
+    padding: 5px;
+  }
+  li a {
+    color: white;
+  }
 }
-
+.nav {
+  li a {
+    color: black;
+  }
+}

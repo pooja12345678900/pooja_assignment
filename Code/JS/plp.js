@@ -52,7 +52,7 @@ function setProduct() {
       prod = obj.find((val) => val.id === result[i].id);
       var count = localStorage.getItem(prod.id);
       $(".product").append(
-        "<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 items'><img src=" +
+        "<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 items'><img alt='' src=" +
           result[i].imageURL +
           "><div class='desc col-lg-12 col-md-12 col-sm-12 col-xs-12'><p><b>" +
           result[i].name +
@@ -164,7 +164,7 @@ $.get(
               data[index].order +
               "><a class='navClass' id=" +
               data[index].id +
-              " href='#show_product'>" +
+              ">" +
               data[index].name +
               "</a></li>"
           );
@@ -173,7 +173,7 @@ $.get(
             data[index].order +
             "><a class='navClass' id=" +
             data[index].id +
-            " href='#show_product'>" +
+            ">" +
             data[index].name +
             "</a></li>"
         );
@@ -200,7 +200,7 @@ $.get(
                     data[index].name +
                     "</b></h5><img id=" +
                     data[index].category +
-                    " style='width:100%' src=" +
+                    " style='width:100%' alt='' src=" +
                     data[index].imageURL +
                     "><p class='description'>" +
                     data[index].description +
@@ -247,7 +247,7 @@ $(document).ready(function () {
                   data[index].name +
                   "</b></h5><img id=" +
                   data[index].category +
-                  " style='width:100%' src=" +
+                  " style='width:100%' alt='' src=" +
                   data[index].imageURL +
                   "><p class='description'>" +
                   data[index].description +

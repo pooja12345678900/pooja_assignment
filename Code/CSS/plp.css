@@ -379,3 +379,7 @@ button.close {
 .drop li a {
   color: white;
 }
+
+.nav li a {
+  color: black;
+}

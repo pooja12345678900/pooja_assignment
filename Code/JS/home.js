@@ -35,7 +35,7 @@ if (obj != null) {
         prod = obj.find((val) => val.id === result[i].id);
         var count = localStorage.getItem(prod.id);
         $(".product").append(
-          "<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 items'><img src=" +
+          "<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 items'><img alt='' src=" +
             result[i].imageURL +
             "><div class='desc col-lg-12 col-md-12 col-sm-12 col-xs-12'><p><b>" +
             result[i].name +
@@ -154,9 +154,7 @@ $.get(
   function (data) {
     $.each(data, function (index) {
       $(".carousel-inner").append(
-        "<div class='item'><img alt =" +
-          data[index].bannerImageAlt +
-          "' src=" +
+        "<div class='item'><img alt='' src=" +
           data[index].bannerImageUrl +
           "></div>"
       );
@@ -175,7 +173,7 @@ $.get(
         $(".category").append(
           "<div class='cat' style= order:" +
             data[index].order +
-            "><img class='col-lg-4 col-md-4 c-sm-4 col-xs-4' src=" +
+            "><img class='col-lg-4 col-md-4 c-sm-4 col-xs-4' alt='' src=" +
             data[index].imageUrl +
             "><span class='col-lg-8 col-md-8 col-sm-8 col-xs-8 descrip' style='order:" +
             data[index].order +
@@ -183,11 +181,11 @@ $.get(
             data[index].name +
             "</b><p>" +
             data[index].description +
-            "</p><a href='../HTML/plp.html' id=" +
+            "</p><button onclick=window.location.href='../HTML/plp.html' id=" +
             data[index].id +
-            " class='explore'><button class='btn btn_color'>Explore " +
+            " class='explore btn btn_color'>Explore " +
             data[index].key +
-            "</button></a></span></div><hr style='order:" +
+            "</button></span></div><hr style='order:" +
             data[index].order +
             "' class='hr2 col-lg-12 col-md-12 col-sm-12 col-xs-12'> "
         );
